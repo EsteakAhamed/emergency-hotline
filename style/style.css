@@ -240,7 +240,7 @@ img {
 }
 
 .btn-clear {
-    background: #ff4d4f;  
+    background: #ff4d4f;
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -252,7 +252,7 @@ img {
 }
 
 .btn-clear:hover {
-    background: #e04345;   
+    background: #e04345;
 }
 
 /* History */
@@ -263,7 +263,7 @@ img {
     box-shadow: var(--shadow);
     padding: 14px;
     height: max-content;
-    align-self: start;  
+    align-self: start;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -333,12 +333,12 @@ img {
 
 @media (max-width: 480px) {
     .page {
-        grid-template-columns: 1fr;  
+        grid-template-columns: 1fr;
         gap: 12px;
     }
 
     .cards-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 12px;
     }
 
@@ -373,13 +373,13 @@ img {
     .history-item {
         padding: 10px;
         font-size: 13px;
-        flex-direction: column;      
+        flex-direction: column;
         align-items: flex-start;
         gap: 4px;
     }
 
     .history-item .time {
-        align-self: flex-end;        
+        align-self: flex-end;
     }
 
     .brand-logo {
