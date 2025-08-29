@@ -1,11 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Hotline</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service Directory</title>
+    <link rel="stylesheet" href="style/style.css" />
 </head>
+
 <body>
-    
+
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="assets/logo.png" alt="Emergency Service Logo" class="brand-logo" />
+            <span class="brand-name">Emergency Service</span>
+        </div>
+
+        <div class="nav-right">
+            <div class="counter">
+                <img src="assets/heart.png" alt="Hearts" />
+                <span id="heartCount">0</span>
+            </div>
+            <div class="counter">
+                <img src="assets/coin.png" alt="Coins" />
+                <span id="coinCount">100</span>
+            </div>
+            <button class="copy-pill" type="button" aria-label="Total copies made">
+                <span>Copy:</span> <strong id="copyCount">0</strong>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="assets/darklogo.png" class="hero-badge" alt="Gov badge" />
+        <h1>Emergency Service Directory</h1>
+        <p>Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of
+            Bangladesh</p>
+    </section>
+
+    <main class="page">
+        <section class="cards-grid" id="cardsGrid">
+
+            <article class="card" data-service="National Emergency" data-number="999">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/emergency.png" alt="National Emergency" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>National Emergency</h3>
+                    <div class="meta">
+                        <span class="en">English: National Emergency</span>
+                    </div>
+                    <div class="number">999</div>
+                    <span class="badge">All</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Police" data-number="999">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/police.png" alt="Police" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Police</h3>
+                    <div class="meta"><span class="en">Police</span></div>
+                    <div class="number">999</div>
+                    <span class="badge">Police</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Fire Service" data-number="999">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/fire.png" alt="Fire Service" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Fire Service Number</h3>
+                    <div class="meta"><span class="en">Fire Service</span></div>
+                    <div class="number">999</div>
+                    <span class="badge">Fire</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Ambulance" data-number="199">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/ambulance.png" alt="Ambulance" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Ambulance</h3>
+                    <div class="meta"><span class="en">Ambulance</span></div>
+                    <div class="number">199</div>
+                    <span class="badge">Health</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Women & Child Helpline" data-number="109">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/heart.png" alt="Women & Child" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Women & Child Helpline</h3>
+                    <div class="meta"><span class="en">Women & Child Helpline</span></div>
+                    <div class="number">109</div>
+                    <span class="badge">Help</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Anti-Corruption Helpline" data-number="106">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/coin.png" alt="Anti-Corruption" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Anti-Corruption Helpline</h3>
+                    <div class="meta"><span class="en">Anti-Corruption Helpline</span></div>
+                    <div class="number">106</div>
+                    <span class="badge">Govt.</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Electricity Outage" data-number="16216">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/darklogo.png" alt="Electricity" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Electricity Outage</h3>
+                    <div class="meta"><span class="en">Electricity Outage</span></div>
+                    <div class="number">16216</div>
+                    <span class="badge">Electricity</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="BRAC Helpline" data-number="16443">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/brac.png" alt="BRAC" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>BRAC Helpline</h3>
+                    <div class="meta"><span class="en">BRAC Helpline</span></div>
+                    <div class="number">16443</div>
+                    <span class="badge">NGO</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+
+            <article class="card" data-service="Bangladesh Railway Helpline" data-number="16318">
+                <div class="card-head">
+                    <div class="avatar"><img src="assets/bdrail.png" alt="Bangladesh Railway" /></div>
+                    <button class="heart-btn" title="Add to favorite" aria-label="Add to favorite">
+                        <img src="assets/heart.png" alt="Heart" />
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3>Bangladesh Railway Helpline</h3>
+                    <div class="meta"><span class="en">Bangladesh Railway Helpline</span></div>
+                    <div class="number">16318</div>
+                    <span class="badge">Travel</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-copy" type="button">📋 Copy</button>
+                    <button class="btn btn-call" type="button">📞 Call</button>
+                </div>
+            </article>
+        </section>
+
+        <aside class="history">
+            <div class="history-head">
+                <div class="title">
+                    <img src="assets/emergency.png" alt="History Icon" />
+                    <span>Call History</span>
+                </div>
+                <button id="clearHistory" class="btn btn-clear" type="button">Clear</button>
+            </div>
+            <ul id="historyList" class="history-list"></ul>
+        </aside>
+    </main>
+
+    <script src="script/main.js"></script>
 </body>
+
 </html>
